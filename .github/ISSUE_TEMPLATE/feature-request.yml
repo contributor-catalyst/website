@@ -31,3 +31,14 @@ body:
     attributes:
       label: Needed assets/content
       description: Note logos, bios, photos, or links needed.
+  - type: dropdown
+    id: a11y_considered
+    attributes:
+      label: Accessibility considered?
+      description: Does this feature introduce new interactive elements, images, or color choices that need a11y review?
+      options:
+        - "N/A - no new UI"
+        - "Yes, and I've noted requirements above"
+        - "Not yet - needs review"
+    validations:
+      required: true
