@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/contributor-catalyst/website/blob/main/.github/CONTRIBUTING.md
+    about: Read this first if you're new — setup, conventions, and how to claim an issue.
+  - name: Browse open issues
+    url: https://github.com/contributor-catalyst/website/issues
+    about: Not sure which template fits, or stuck mid-task? Comment on a related open issue instead of filing a blank one.
