@@ -28,6 +28,17 @@ body:
     attributes:
       label: Source materials
       description: Links, docs, slides, or media files.
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated effort
+      description: Helps contributors pick a task that fits their available time.
+      options:
+        - Small (under 1 hour)
+        - Medium (a few hours)
+        - Large (multiple sessions)
+    validations:
+      required: true
   - type: textarea
     id: done
     attributes:
