@@ -30,6 +30,22 @@ body:
       label: Expected behavior
     validations:
       required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page or URL
+      description: Which page is affected? (e.g. /gallery/, /cohorts/year-4.html)
+      placeholder: /gallery/
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser / device
+      description: What were you using when you saw this? Include OS if relevant.
+      placeholder: e.g. Chrome 126 on macOS, Safari on iPhone 15
+    validations:
+      required: true
   - type: textarea
     id: screenshots
     attributes:
@@ -39,9 +55,21 @@ body:
     id: a11y
     attributes:
       label: Accessibility impact
+      description: Does this affect keyboard navigation, screen readers, or contrast?
       options:
         - None known
         - Minor
         - Major
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How much does this block users or contributors?
+      options:
+        - Low (cosmetic)
+        - Medium (annoying but workable)
+        - High (broken/blocking)
     validations:
       required: true
